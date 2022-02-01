@@ -5,7 +5,7 @@ import { GoMarkGithub } from 'react-icons/go';
 
 const Repos: any = ({data}:any)=>{
     return(
-        <Grid.Container id="repos" wrap="wrap" justify="center" alignItems="stretch" direction="row" style={{backgroundColor: "#181818"}}>
+        <Grid.Container gap={1} id="repos" wrap="wrap" justify="center" alignItems="stretch" direction="row" style={{backgroundColor: "#181818", width: '100%', padding: 0, margin: 0}}>
             {data.data?.map((e:any)=>{
               let name:string = e.name.replace(/-/g, ' ')
               function capitalizeTheFirstLetterOfEachWord(words:string) {
@@ -17,8 +17,8 @@ const Repos: any = ({data}:any)=>{
                 return separateWord.join(' ');
              }
         return(
-          <Grid key={e.id} lg={3} md={4} sm={5} xs={12} style={{margin: 10}}>
-              <Card style={{backgroundColor: '#525252', borderRadius: '4px', padding: 10}} shadow>
+          <Grid key={e.id} lg={4} md={4} sm={5} xs={12} >
+              <Card style={{backgroundColor: '#525252', borderRadius: '4px', width: "100%"}} shadow>
                   <Grid.Container direction="row" alignItems="center">
                   <Grid lg={10} md={10} sm={10} xs={10}>
                 <Text color="black" h2>{capitalizeTheFirstLetterOfEachWord(name)}</Text>
@@ -29,7 +29,7 @@ const Repos: any = ({data}:any)=>{
           </a>
                 </Grid>
                   </Grid.Container>
-                  {e.description ?  <><Spacer y={1}/><Text color="black" size="1.25em">{e.description}</Text><Spacer y={1}/></> : ''}
+                  {e.description ?  <><Text color="black" style={{fontSize: '1.25em'}} >{e.description}</Text><Spacer y={1.5}/></> : ''}
                   <Grid.Container justify="flex-start" alignItems="center" direction="row">
           <Grid xs={6}>
           {e.homepage ?<Link href={e.homepage} target="_blank" style={{color: '#111', fontSize: '1.25em'}} underline>

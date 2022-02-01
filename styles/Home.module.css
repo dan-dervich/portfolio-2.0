@@ -1,16 +1,26 @@
-.wavingHand{
-  font-size: 28px;
-  animation: 0.5s ease 0s 3 normal forwards running wave;
+.nav_links {
+  color: #b9b9b9;
+  font-size: 1.3em;
 }
 
-@keyframes wave {
-  0% {
-    transform: rotate(4deg);
-  }
-  50% {
-    transform: rotate(-4deg);
-  }
-  100% {
-    transform: rotate(4deg);
-  }
+.nav_links::after{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    position: relative;
+    top: 0.2em;
+    background-color: #b9b9b9;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    opacity: 0.5;
+}
+.nav_links::before {
+	content: "";
+	margin-right: 5px;
+	color: rgb(6, 147, 227);
+	font-size: 1.1rem;
+	text-align: right;
+}
+.nav_links:hover::after, .nav_links:focus::after, .nav_links:active::after {
+	width: 100%;
 }

@@ -4,6 +4,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  scroll-snap-align: end;
     scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: #4f4e4d #181818;
