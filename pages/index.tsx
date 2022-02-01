@@ -31,7 +31,7 @@ class Home extends React.Component {
       </Head>
       <Main />
       <AboutMe />
-      <Repos data={this.props.data}/>
+      <Repos data={this.props}/>
       <Contact />
       <Footer />
     </div>

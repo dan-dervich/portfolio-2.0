@@ -3,10 +3,10 @@ import { GoMarkGithub } from 'react-icons/go';
 // GoMarkGithub
 
 
-const Repos: any = (repos:any)=>{
+const Repos: any = ({data}:any)=>{
     return(
         <Grid.Container id="repos" wrap="wrap" justify="center" alignItems="stretch" direction="row" style={{backgroundColor: "#181818"}}>
-            {repos.data?.map((e:any)=>{
+            {data.data?.map((e:any)=>{
               let name:string = e.name.replace(/-/g, ' ')
               function capitalizeTheFirstLetterOfEachWord(words:string) {
                 var separateWord = words.toLowerCase().split(' ');
@@ -32,7 +32,7 @@ const Repos: any = (repos:any)=>{
                   {e.description ?  <><Spacer y={1}/><Text color="black" size="1.25em">{e.description}</Text><Spacer y={1}/></> : ''}
                   <Grid.Container justify="flex-start" alignItems="center" direction="row">
           <Grid xs={6}>
-          {e.homepage ?<Link href={'https://' + e.homepage} target="_blank" style={{color: '#111', fontSize: '1.25em'}} underline>
+          {e.homepage ?<Link href={e.homepage} target="_blank" style={{color: '#111', fontSize: '1.25em'}} underline>
             HomePage
           </Link>: ''}
           </Grid>
