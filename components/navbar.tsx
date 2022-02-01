@@ -12,7 +12,7 @@ function NavBar(){
                 <Spacer x={.5}/>
                 <a className={styles.nav_links} href="#contact">Contact</a>
                 <Spacer x={.5}/>
-                <a className={styles.nav_links} target="_blank" href="/DanDervich resume.pdf">Resume</a>
+                <a className={styles.nav_links} target="_blank" href="/resume.pdf">Resume</a>
             </Grid.Container>
         </nav>
     )
