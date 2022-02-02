@@ -18,14 +18,14 @@ const Repos: any = ({data}:any)=>{
              }
         return(
           <Grid key={e.id} lg={4} md={4} sm={5} xs={12} >
-              <Card style={{backgroundColor: '#525252', borderRadius: '4px', width: "100%"}} shadow>
+              <Card style={{backgroundColor: '#8b8b8b', borderRadius: '4px', width: "100%"}} shadow>
                   <Grid.Container direction="row" alignItems="center">
                   <Grid lg={10} md={10} sm={10} xs={10}>
                 <Text color="black" h2>{capitalizeTheFirstLetterOfEachWord(name)}</Text>
                   </Grid>
                 <Grid alignItems="flex-end" justify="flex-end" xs={0} sm={1} md={1} lg={1}>
           <a href={e.svn_url} target="_blank" rel="noreferrer">
-          <GoMarkGithub  style={{backgroundColor: '#525252', margin: 20, transition: '.2s all ease'}} />
+          <GoMarkGithub  style={{backgroundColor: '#8b8b8b', margin: 20, transition: '.2s all ease'}} />
           </a>
                 </Grid>
                   </Grid.Container>
@@ -38,7 +38,7 @@ const Repos: any = ({data}:any)=>{
           </Grid>
           <Grid xs={6} sm={0} md={0} lg={0} xl={0} justify="flex-end">
           <a href={e.svn_url} target="_blank" rel="noreferrer">
-          <GoMarkGithub style={{backgroundColor: '#525252', margin: 20, transition: '.2s all ease'}} />
+          <GoMarkGithub style={{backgroundColor: '#8b8b8b', margin: 20, transition: '.2s all ease'}} />
           </a>
           </Grid>
                   </Grid.Container>
