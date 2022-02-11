@@ -40,7 +40,7 @@ function NavBar(){
       <a href="#about"><li className={styles.nav_links}>About</li></a>
       <a href="#repos"><li className={styles.nav_links}>Projects</li></a>
       <a href="#contact"><li className={styles.nav_links}>Contact</li></a>
-      <a href="/resume.pdf"><li className={styles.nav_links}>Resume</li></a>
+      <a href="/resume.pdf" target="_blank"><li className={styles.nav_links}>Resume</li></a>
     </ul>
   </div>
 </nav>
