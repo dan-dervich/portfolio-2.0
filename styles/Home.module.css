@@ -31,8 +31,6 @@
     display: none;
   }
   #lgMenu{
-    background-color: #181818;
-    opacity: .9; 
     position: fixed;
   }
   .navBar{

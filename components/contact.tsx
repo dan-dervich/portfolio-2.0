@@ -10,7 +10,7 @@ function Contact(){
         <Text color="#b9b9b9" h1>Contact Info:</Text>
         <Spacer y={3}/>
         <Grid direction="row" xs={12} sm={12} lg={6} alignItems='center' justify='center'>
-        <Text color="#b9b9b9" h2><a href="mailto:dandervich@hotmail.com"><MdEmail /></a></Text>
+        <Text color="#b9b9b9" h2><a href="mailto:dandervich@gmail.com"><MdEmail /></a></Text>
         <Spacer x={1}/>
         <Text color="#b9b9b9" h2><a href="tel:+5491170088477"><FaPhoneAlt /></a></Text>
         <Spacer x={1}/>

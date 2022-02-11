@@ -1,4 +1,4 @@
-import { Grid, Spacer } from "@nextui-org/react"
+import { Grid} from "@nextui-org/react"
 import styles from '../styles/Home.module.css'
 
 function NavBar(){
@@ -19,16 +19,16 @@ function NavBar(){
 <nav role="navigation" className={styles.navBar} >
     <Grid.Container gap={3} id={styles.lgMenu} justify="center" alignItems="center" direction="row">
         <Grid>
-      <a href="#about" className={styles.nav_links}>Home</a>
+      <a href="#about" className={styles.nav_links}>About</a>
         </Grid>
         <Grid>
-      <a href="#repos" className={styles.nav_links}>About</a>
+      <a href="#repos" className={styles.nav_links}>Projects</a>
       </Grid>
       <Grid>
-      <a href="#contact" className={styles.nav_links}>Info</a>
+      <a href="#contact" className={styles.nav_links}>Contact</a>
       </Grid>
       <Grid>
-      <a href="/resume.pdf" target="_blank" className={styles.nav_links}>Contact</a>
+      <a href="/resume.pdf" target="_blank" className={styles.nav_links}>Resume</a>
       </Grid>
     </Grid.Container>
   <div id={styles.menuToggle}>
@@ -37,10 +37,10 @@ function NavBar(){
     <span></span>
     <span></span>
     <ul id={styles.menu}>
-      <a href="#about"><li className={styles.nav_links}>Home</li></a>
-      <a href="#repos"><li className={styles.nav_links}>About</li></a>
-      <a href="#contact"><li className={styles.nav_links}>Info</li></a>
-      <a href="/resume.pdf"><li className={styles.nav_links}>Contact</li></a>
+      <a href="#about"><li className={styles.nav_links}>About</li></a>
+      <a href="#repos"><li className={styles.nav_links}>Projects</li></a>
+      <a href="#contact"><li className={styles.nav_links}>Contact</li></a>
+      <a href="/resume.pdf"><li className={styles.nav_links}>Resume</li></a>
     </ul>
   </div>
 </nav>
