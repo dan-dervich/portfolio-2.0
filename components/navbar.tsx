@@ -1,20 +1,50 @@
-import { Grid, Spacer, Link } from "@nextui-org/react"
+import { Grid, Spacer } from "@nextui-org/react"
 import styles from '../styles/Home.module.css'
 
 function NavBar(){
+    // const navStyles: object = {
+    // backgroundColor: "#181818", opacity: .9, 
+    // position: 'fixed',
+    // top: 0,
+    // right: 0,
+    // left: 0,
+    // minHeight: '10vh',
+    // zIndex: 10000000, 
+    // display: 'flex', 
+    // justifyItems: 'center',
+    // alignItems: "center"
+    // }
     return(
-        <nav style={{backgroundColor: "#181818", opacity: .9, 
-        position: 'fixed', top: 0, right: 0, left: 0, minHeight: '10vh', zIndex: 10000000, display: 'flex', justifyItems: 'center', alignItems: "center"}}>
-            <Grid.Container justify="center" alignItems="center" direction="row" >
-                <a className={styles.nav_links} href="#about">About</a>
-                <Spacer x={.5}/>
-                <a className={styles.nav_links} href="#repos">Projects</a>
-                <Spacer x={.5}/>
-                <a className={styles.nav_links} href="#contact">Contact</a>
-                <Spacer x={.5}/>
-                <a className={styles.nav_links} target="_blank" href="/resume.pdf">Resume</a>
-            </Grid.Container>
-        </nav>
+        <>
+<nav role="navigation" className={styles.navBar} >
+    <Grid.Container gap={3} id={styles.lgMenu} justify="center" alignItems="center" direction="row">
+        <Grid>
+      <a href="#about" className={styles.nav_links}>Home</a>
+        </Grid>
+        <Grid>
+      <a href="#repos" className={styles.nav_links}>About</a>
+      </Grid>
+      <Grid>
+      <a href="#contact" className={styles.nav_links}>Info</a>
+      </Grid>
+      <Grid>
+      <a href="/resume.pdf" target="_blank" className={styles.nav_links}>Contact</a>
+      </Grid>
+    </Grid.Container>
+  <div id={styles.menuToggle}>
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id={styles.menu}>
+      <a href="#about"><li className={styles.nav_links}>Home</li></a>
+      <a href="#repos"><li className={styles.nav_links}>About</li></a>
+      <a href="#contact"><li className={styles.nav_links}>Info</li></a>
+      <a href="/resume.pdf"><li className={styles.nav_links}>Contact</li></a>
+    </ul>
+  </div>
+</nav>
+        </>
     )
 }
 
