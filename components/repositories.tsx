@@ -3,7 +3,7 @@ import { GoMarkGithub } from 'react-icons/go';
 
 const Repos: any = ({data}:any)=>{
     return(
-        <Grid.Container gap={1} wrap="wrap" justify="center" alignItems="stretch" direction="row" style={{backgroundColor: "#181818", width: '100%', padding: 0, margin: 0}}>
+        <Grid.Container gap={1} wrap="wrap" justify="center" alignItems="stretch" direction="row" style={{backgroundColor: "#181818", width: '100%', padding: '10%', margin: 0}}>
             {data.data?.map((e:any)=>{
               let name:string = e.name.replace(/-/g, ' ')
               function capitalizeTheFirstLetterOfEachWord(words:string) {
